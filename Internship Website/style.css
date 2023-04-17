@@ -1,0 +1,289 @@
+/* Reset all default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cta-btn {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #005299;
+}
+
+/* Set the hero section styles */
+#hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* Set the about section styles */
+#about {
+    padding: 70px 80px;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Set the services section styles */
+#services {
+    background-color: #fff;
+    padding: 80px;
+}
+
+.services-content h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 1.1em;
+}
+
+/* Set the team section styles */
+#team {
+    padding: 80px;
+}
+
+.team-content h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+}
+
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) { 
+  #testimonials {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  flex: 0 0 48%;
+  max-width: 480px;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  flex: 0 0 32%;
+  max-width: 320px;
+}
+
+@media only screen and (min-width: 992px) {
+.testimonial {
+    flex: 0 0 32%;
+    max-width: 320px;
+ }
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonial em {
+  font-style: italic;
+}
+
+.testimonial:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+/* Contact */
+#contact {
+    background-color: #ffffff;
+    padding: 50px 50px;
+}
+input, textarea {
+  background-color: rgb(243, 236, 236);
+}
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-content form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-content form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.contact-content form input,
+.contact-content form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contact-content form textarea {
+    resize: none;
+    height: 150px;
+}
+.contact-content form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-content form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+    .services-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .team-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team-member {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
